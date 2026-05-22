@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>RBQ Mercawati - Prasekolah Islam | Bermain Bahagia, Belajar Bermakna</title>
+
+    <!-- Tailwind CSS (CDN) -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700&display=swap"
+        rel="stylesheet" />
+
+    <!-- Tailwind Config -->
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "background": "#FDFCF9",
+                        "primary": "#4A635D",
+                        "secondary": "#C5A059",
+                        "surface": "#F7F5F0",
+                        "on-background": "#2C3331",
+                        "on-primary": "#FFFFFF",
+                        "on-surface-variant": "#5F6B68",
+                        "outline": "#D1D9D6",
+                        "gold-light": "#E9D7B3"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.5rem",
+                        "lg": "1rem",
+                        "xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "margin-mobile": "16px",
+                        "unit": "8px",
+                        "gutter": "32px",
+                        "margin-desktop": "40px",
+                        "container-max": "1280px"
+                    },
+                    "fontFamily": {
+                        "body": ["Inter", "sans-serif"],
+                        "display": ["Plus Jakarta Sans", "Inter", "sans-serif"]
+                    }
+                },
+            },
+        }
+    </script>
+
+    <!-- External Stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body
+    class="bg-background text-on-background font-body antialiased min-h-screen flex flex-col selection:bg-secondary/20">
+
+    <!-- Nav -->
+    <header class="bg-background/80 backdrop-blur-md fixed top-0 w-full z-50 border-b border-outline/20">
+        <div class="flex justify-between items-center w-full px-6 md:px-10 py-4 max-w-[1280px] mx-auto">
+            <div class="flex items-center gap-2">
+                <img src="images/logo.png" alt="Logo RBQ Mergawati" class="h-12 w-auto object-contain" />
+                <span class="font-display text-2xl font-bold tracking-tight text-primary">RBQ Mergawati</span>
+            </div>
+            <nav class="hidden md:flex items-center gap-8">
+                <a class="text-on-background/70 font-medium hover:text-primary transition-all text-sm tracking-wide"
+                    href="#program">PROGRAM</a>
+                <a class="text-on-background/70 font-medium hover:text-primary transition-all text-sm tracking-wide"
+                    href="#tentang-kami">TENTANG KAMI</a>
+                <a class="text-on-background/70 font-medium hover:text-primary transition-all text-sm tracking-wide"
+                    href="#galeri">GALERI</a>
+            </nav>
+            <a href="https://wa.me/6281517802558?text=Assalamualaikum%20ust,%20boleh%20jelasin%20lebih%20detail%20lagi%20ga%20tentang%20RBQ%20ini"
+                class="bg-primary text-on-primary text-sm font-semibold px-6 py-3 rounded-full hover:shadow-lg hover:shadow-primary/20 transition-all active:scale-95">
+                Daftar Sekarang
+            </a>
+        </div>
+    </header>
+
+    <main class="flex-grow pt-[72px]">
+
+        <section class="grid lg:grid-cols-2 items-stretch min-h-[calc(100vh-72px)]">
+            <!-- Teks kiri -->
+            <div class="flex items-center px-8 md:px-12 py-12">
+                <div class="space-y-6 max-w-xl">
+                    <div
+                        class="inline-flex items-center gap-2 px-4 py-2 bg-primary/5 rounded-full border border-primary/10">
+                        <span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+                        <span class="text-xs font-bold tracking-widest text-primary uppercase">Prasekolah RBQ
+                            Mercawati</span>
+                    </div>
+                    <h1 class="font-display text-5xl md:text-6xl font-bold text-primary leading-[1.1] tracking-tight">
+                        Bermain Bahagia, <span class="text-secondary">Belajar Bermakna, Berkembang Sempurna.</span>
+                    </h1>
+                    <p class="text-lg text-on-surface-variant leading-relaxed">
+                        PAUD & Prasekolah Islam dengan metode unggulan — Ummi, Abacaga, dan program parenting terpadu.
+                        Kami hadir untuk mendampingi tumbuh kembang si kecil secara holistik.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 pt-2">
+                        <a class="sage-gradient text-on-primary font-semibold text-sm px-8 py-4 rounded-full flex items-center justify-center gap-2 hover:shadow-xl transition-all active:scale-95"
+                            href="https://wa.me/6281517802558?text=Assalamualaikum%20ust,%20boleh%20jelasin%20lebih%20detail%20lagi%20ga%20tentang%20RBQ%20ini" target="_blank" rel="noopener">
+                            <span class="material-symbols-outlined !text-white text-lg">chat_bubble</span>
+                            Daftar via WhatsApp
+                        </a>
+                        <a class="gold-border text-primary font-semibold text-sm px-8 py-4 rounded-full hover:bg-surface transition-all flex items-center justify-center gap-2"
+                            href="https://wa.me/6281517802558?text=Assalamualaikum%20ust,%20boleh%20jelasin%20lebih%20detail%20lagi%20ga%20tentang%20RBQ%20ini" target="_blank" rel="noopener">
+                            <span class="material-symbols-outlined text-lg" style="color:#4A635D">info</span>
+                            Informasi PPDB
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="relative h-full min-h-[500px]">
+                <img alt="Siswa Prasekolah RBQ Mercawati" class="w-full h-full object-cover" src="images/image.png" />
+                <!-- Badge Rasio Guru-Murid -->
+                <div class="absolute bottom-8 left-8 p-5 bg-white/90 backdrop-blur-sm rounded-2xl premium-shadow">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
+                            <span class="material-symbols-outlined !text-primary">group</span>
+                        </div>
+                        <div>
+                            <p class="text-xs font-bold text-primary">Rasio Guru : Murid</p>
+                            <p class="text-[10px] text-on-surface-variant">1 : 5 — Terlayani Maksimal</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Program -->
+        <section id="program" class="py-24 bg-surface/50 border-y border-outline/10 px-6 md:px-10">
+            <div class="max-w-[1280px] mx-auto">
+                <div class="text-center max-w-2xl mx-auto mb-16 space-y-4">
+                    <h2 class="font-display text-4xl font-bold text-primary">Keunggulan Program RBQ</h2>
+                    <p class="text-on-surface-variant">Tiga pilar utama yang membedakan RBQ dari PAUD lainnya.</p>
+                    <div class="h-1 w-20 bg-secondary mx-auto rounded-full"></div>
+                </div>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div
+                        class="bg-white p-8 rounded-3xl premium-shadow border border-outline/10 hover:border-secondary/30 transition-colors group">
+                        <span
+                            class="material-symbols-outlined text-4xl mb-6 block group-hover:scale-110 transition-transform">menu_book</span>
+                        <h3 class="text-xl font-bold text-primary mb-3">Metode Ummi</h3>
+                        <p class="text-on-surface-variant text-sm leading-relaxed">Belajar membaca huruf hijaiyah dan
+                            menghafal Juz 'Amma dengan metode Ummi yang terstruktur dan menyenangkan.</p>
+                    </div>
+                    <div
+                        class="bg-white p-8 rounded-3xl premium-shadow border border-outline/10 hover:border-secondary/30 transition-colors group">
+                        <span
+                            class="material-symbols-outlined text-4xl mb-6 block group-hover:scale-110 transition-transform">auto_stories</span>
+                        <h3 class="text-xl font-bold text-primary mb-3">Metode Abacaga</h3>
+                        <p class="text-on-surface-variant text-sm leading-relaxed">Belajar membaca dengan metode
+                            Abacaga. Anak yang lulus mendapatkan <strong class="text-secondary">hadiah spesial</strong>
+                            sebagai apresiasi.</p>
+                    </div>
+                    <div
+                        class="bg-white p-8 rounded-3xl premium-shadow border border-outline/10 hover:border-secondary/30 transition-colors group">
+                        <span
+                            class="material-symbols-outlined text-4xl mb-6 block group-hover:scale-110 transition-transform">family_restroom</span>
+                        <h3 class="text-xl font-bold text-primary mb-3">Program SPOT</h3>
+                        <p class="text-on-surface-variant text-sm leading-relaxed">Sekolah Pekan Orang Tua (SPOT) —
+                            program parenting rutin disertai bimbingan ruhani dan renungan harian.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About -->
+        <section id="tentang-kami" class="py-24 px-6 md:px-10 max-w-[1280px] mx-auto">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+
+                <!-- About Photo — ganti dengan foto kamu di folder images/ -->
+                <div class="relative order-2 lg:order-1 min-h-[450px]">
+                    <img alt="Komunitas RBQ Mercawati" class="w-full h-full object-cover rounded-2xl"
+                        src="images/image2.png" />
+                </div>
+
+                <div class="space-y-6 order-1 lg:order-2">
+                    <span class="text-secondary font-bold tracking-widest text-xs uppercase flex items-center gap-2">
+                        <span class="w-6 h-[1px] bg-secondary"></span> Prasekolah RBQ Mercawati
+                    </span>
+                    <h2 class="font-display text-3xl font-bold text-primary leading-tight">
+                        Apa yang Ada di RBQ dan Hampir Tidak Ada di PAUD Lain?
+                    </h2>
+                    <p class="text-on-surface-variant leading-relaxed">
+                        <em class="font-semibold text-primary">Bermain bahagia. Belajar bermakna. dan Berkembang
+                            sempurna.</em>
+                    </p>
+
+                    <!-- Daftar 8 Keunggulan -->
+                    <ol class="space-y-3 pt-2">
+                        <li class="flex gap-3 items-start">
+                            <span
+                                class="shrink-0 w-7 h-7 rounded-full bg-secondary text-white text-xs font-bold flex items-center justify-center mt-0.5">01</span>
+                            <p class="text-sm text-on-background leading-relaxed">
+                                <strong>Mengaji metode Ummi</strong> — membaca huruf hijaiyah dan menghapal juz 'amma.
+                            </p>
+                        </li>
+                        <li class="flex gap-3 items-start">
+                            <span
+                                class="shrink-0 w-7 h-7 rounded-full bg-secondary text-white text-xs font-bold flex items-center justify-center mt-0.5">02</span>
+                            <p class="text-sm text-on-background leading-relaxed">
+                                <strong>Membaca metode Abacaga</strong> — bagi anak yang lulus mendapatkan hadiah
+                                spesial.
+                            </p>
+                        </li>
+                        <li class="flex gap-3 items-start">
+                            <span
+                                class="shrink-0 w-7 h-7 rounded-full bg-primary text-white text-xs font-bold flex items-center justify-center mt-0.5">03</span>
+                            <p class="text-sm text-on-background leading-relaxed">
+                                <strong>Perbandingan guru dan murid 1:5</strong> — per kelas 2 guru 10 murid, agar anak
+                                lebih terlayani dengan maksimal.
+                            </p>
+                        </li>
+                        <li class="flex gap-3 items-start">
+                            <span
+                                class="shrink-0 w-7 h-7 rounded-full bg-primary text-white text-xs font-bold flex items-center justify-center mt-0.5">04</span>
+                            <p class="text-sm text-on-background leading-relaxed">
+                                <strong>Program parenting SPOT</strong> (Sekolah Pekan Orang Tua) dan bimbingan ruhani
+                                rutin (renungan harian).
+                            </p>
+                        </li>
+                        <li class="flex gap-3 items-start">
+                            <span
+                                class="shrink-0 w-7 h-7 rounded-full bg-secondary text-white text-xs font-bold flex items-center justify-center mt-0.5">05</span>
+                            <p class="text-sm text-on-background leading-relaxed">
+                                <strong>Raport berbasis portofolio</strong> (seperti TK di Jerman), disertai raport 4
+                                aspek perkembangan anak.
+                            </p>
+                        </li>
+                        <li class="flex gap-3 items-start">
+                            <span
+                                class="shrink-0 w-7 h-7 rounded-full bg-secondary text-white text-xs font-bold flex items-center justify-center mt-0.5">06</span>
+                            <p class="text-sm text-on-background leading-relaxed">
+                                Mencari, menemukan, &amp; mengembangkan <strong>potensi kecerdasan dominan</strong>,
+                                minat, dan bakat anak.
+                            </p>
+                        </li>
+                        <li class="flex gap-3 items-start">
+                            <span
+                                class="shrink-0 w-7 h-7 rounded-full bg-primary text-white text-xs font-bold flex items-center justify-center mt-0.5">07</span>
+                            <p class="text-sm text-on-background leading-relaxed">
+                                <strong>PR calistung harian</strong> untuk persiapan anak-anak masuk SD (Sekolah Dasar).
+                            </p>
+                        </li>
+                        <li class="flex gap-3 items-start">
+                            <span
+                                class="shrink-0 w-7 h-7 rounded-full bg-primary text-white text-xs font-bold flex items-center justify-center mt-0.5">08</span>
+                            <p class="text-sm text-on-background leading-relaxed">
+                                <strong>Program BK</strong> — konsultasi pribadi 24 jam, kunjungan khusus, skorsing
+                                terbimbing, dll.
+                            </p>
+                        </li>
+                    </ol>
+
+                    <!-- Info PPDB -->
+                    <a href="https://wa.me/6281517802558?text=Assalamualaikum%20ust,%20boleh%20jelasin%20lebih%20detail%20lagi%20ga%20tentang%20RBQ%20ini" target="_blank" rel="noopener"
+                        class="mt-6 p-4 bg-primary/5 rounded-2xl border border-primary/10 flex items-center gap-4 hover:bg-primary/10 transition-colors">
+                        <span class="material-symbols-outlined !text-primary text-3xl shrink-0">phone_in_talk</span>
+                        <div>
+                            <p class="text-xs font-bold text-on-surface-variant uppercase tracking-widest">Informasi
+                                PPDB — Hubungi</p>
+                            <p class="text-primary font-bold text-lg">0815 1780 2558</p>
+                            <p class="text-xs text-on-surface-variant">(Ust. Sofy) — Klik untuk WhatsApp</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tagline -->
+        <section class="py-20 px-6 text-center">
+            <div
+                class="max-w-3xl mx-auto p-12 bg-primary rounded-[3rem] text-white premium-shadow relative overflow-hidden">
+                <div class="absolute top-0 right-0 p-4 opacity-10">
+                    <span class="material-symbols-outlined text-9xl">format_quote</span>
+                </div>
+                <p class="text-xl md:text-2xl font-medium leading-relaxed italic relative z-10">
+                    "Bermain bahagia, belajar bermakna, dan berkembang sempurna — itulah RBQ Mercawati."
+                </p>
+                <p class="text-white/70 text-sm mt-4 relative z-10">Prasekolah RBQ Mercawati</p>
+                <div class="mt-6 h-1 w-12 bg-secondary mx-auto rounded-full"></div>
+            </div>
+        </section>
+
+        <!-- Gallery -->
+        <section id="galeri" class="py-20 px-6 md:px-10 bg-surface/50">
+            <div class="max-w-[1280px] mx-auto">
+                <!-- Judul Section -->
+                <div class="text-center max-w-2xl mx-auto mb-14 space-y-4">
+                    <span class="text-secondary font-bold tracking-widest text-xs uppercase flex items-center justify-center gap-2">
+                        <span class="w-6 h-[1px] bg-secondary"></span> Momen Bersama <span class="w-6 h-[1px] bg-secondary"></span>
+                    </span>
+                    <h2 class="font-display text-4xl font-bold text-primary">Kegiatan yang ada di RBQ</h2>
+                    <p class="text-on-surface-variant">Setiap momen adalah bagian dari perjalanan tumbuh kembang si kecil bersama kami.</p>
+                    <div class="h-1 w-20 bg-secondary mx-auto rounded-full"></div>
+                </div>
+
+                <!-- Wrapper Grid untuk menyusun card bersebelahan -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center">
+                    
+                    <div class="card bg-base-100 shadow-sm w-full max-w-[384px] bg-white rounded-2xl overflow-hidden border border-outline/10 group">
+                        <figure class="overflow-hidden">
+                            <img
+                            src="images/gallery1.png"
+                            onclick="openModal(this.src)"
+                            alt="Field Trip RBQ" class="w-full h-56 object-cover cursor-pointer group-hover:scale-105 transition-transform duration-500" />
+                        </figure>
+                        <div class="card-body p-6 text-center">
+                            <h2 class="card-title font-bold text-lg mb-2 text-primary">Field Trip Siswa</h2>
+                            <p class="text-on-surface-variant text-sm">Kegiatan field trip seru bersama teman-teman dan guru untuk belajar di luar kelas.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="card bg-base-100 shadow-sm w-full max-w-[384px] bg-white rounded-2xl overflow-hidden border border-outline/10 group">
+                        <figure class="overflow-hidden">
+                            <img
+                            src="images/gallery2.png"
+                            onclick="openModal(this.src)"
+                            alt="Foto Kelas RBQ" class="w-full h-56 object-cover object-top cursor-pointer group-hover:scale-105 transition-transform duration-500" />
+                        </figure>
+                        <div class="card-body p-6 text-center">
+                            <h2 class="card-title font-bold text-lg mb-2 text-primary">Keseruan di Kelas</h2>
+                            <p class="text-on-surface-variant text-sm">Bermain bahagia dan belajar bermakna bersama siswa-siswi RBQ Mercawati.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="card bg-base-100 shadow-sm w-full max-w-[384px] bg-white rounded-2xl overflow-hidden border border-outline/10 group">
+                        <figure class="overflow-hidden">
+                            <img
+                            src="images/gallery3.png"
+                            onclick="openModal(this.src)"
+                            alt="Wisuda Tahfidz Al-Quran" class="w-full h-56 object-cover object-top cursor-pointer group-hover:scale-105 transition-transform duration-500" />
+                        </figure>
+                        <div class="card-body p-6 text-center">
+                            <h2 class="card-title font-bold text-lg mb-2 text-primary">Wisuda Tahfidz Al-Quran</h2>
+                            <p class="text-on-surface-variant text-sm">Momen haru dan bangga saat anak-anak menyelesaikan hafalan Al-Quran mereka.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="card bg-base-100 shadow-sm w-full max-w-[384px] bg-white rounded-2xl overflow-hidden border border-outline/10 group">
+                        <figure class="overflow-hidden">
+                            <img
+                            src="images/gallery4.png"
+                            onclick="openModal(this.src)"
+                            alt="Penyerahan Sertifikat" class="w-full h-56 object-cover object-top cursor-pointer group-hover:scale-105 transition-transform duration-500" />
+                        </figure>
+                        <div class="card-body p-6 text-center">
+                            <h2 class="card-title font-bold text-lg mb-2 text-primary">Kelulusan Metode Abacaga</h2>
+                            <p class="text-on-surface-variant text-sm">Penyerahan sertifikat bagi anak-anak yang telah lulus program membaca.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="card bg-base-100 shadow-sm w-full max-w-[384px] bg-white rounded-2xl overflow-hidden border border-outline/10 group">
+                        <figure class="overflow-hidden">
+                            <img
+                            src="images/gallery5.png"
+                            onclick="openModal(this.src)"
+                            alt="Wisuda RBQ Mergawati" class="w-full h-56 object-cover object-top cursor-pointer group-hover:scale-105 transition-transform duration-500" />
+                        </figure>
+                        <div class="card-body p-6 text-center">
+                            <h2 class="card-title font-bold text-lg mb-2 text-primary">Penampilan Akhir Tahun</h2>
+                            <p class="text-on-surface-variant text-sm">Pentas seni kelulusan dan pelepasan siswa-siswi prasekolah RBQ Mercawati.</p>
+                        </div>
+                    </div>
+                    <div class="card bg-base-100 shadow-sm w-full max-w-[384px] bg-white rounded-2xl overflow-hidden border border-outline/10 group">
+                        <figure class="overflow-hidden">
+                            <img
+                            src="images/image 6.png"
+                            onclick="openModal(this.src)"
+                            alt="Wisuda RBQ Mergawati" class="w-full h-56 object-cover object-top cursor-pointer group-hover:scale-105 transition-transform duration-500" />
+                        </figure>
+                        <div class="card-body p-6 text-center">
+                            <h2 class="card-title font-bold text-lg mb-2 text-primary">Cooking Time</h2>
+                            <p class="text-on-surface-variant text-sm">Memasak dan mencicipi makanan sehat</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Maps -->
+        <section class="py-20 px-6 md:px-10">
+            <div class="max-w-[1280px] mx-auto">
+                <div class="text-center max-w-2xl mx-auto mb-14 space-y-4">
+                    <span class="text-secondary font-bold tracking-widest text-xs uppercase flex items-center justify-center gap-2">
+                        <span class="w-6 h-[1px] bg-secondary"></span> Kunjungi Kami <span class="w-6 h-[1px] bg-secondary"></span>
+                    </span>
+                    <h2 class="font-display text-4xl font-bold text-primary">Lokasi RBQ Mercawati</h2>
+                    <p class="text-on-surface-variant">Mari berkunjung dan melihat langsung lingkungan bermain dan belajar anak-anak.</p>
+                    <div class="h-1 w-20 bg-secondary mx-auto rounded-full"></div>
+                </div>
+                
+                <div class="w-full h-[400px] rounded-3xl overflow-hidden premium-shadow border border-outline/10 relative group">
+                    <iframe 
+                        src="https://maps.google.com/maps?q=RBQ%20MERGAWATI%20(Rumah%20Belajar%20Qur'an)&t=&z=16&ie=UTF8&iwloc=&output=embed" 
+                        width="100%" 
+                        height="100%" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                    
+                    <!-- Overlay link to open in new tab just in case -->
+                    <div class="absolute inset-0 pointer-events-none rounded-3xl shadow-[inset_0_0_20px_rgba(0,0,0,0.05)]"></div>
+                </div>
+                <div class="text-center mt-6">
+                    <a href="https://maps.app.goo.gl/z1ogq5t2Ep4G4Ztm7" target="_blank" rel="noopener" class="inline-flex items-center gap-2 text-primary font-semibold hover:text-secondary transition-colors">
+                        <span class="material-symbols-outlined text-lg">open_in_new</span>
+                        Buka di Google Maps
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-surface border-t border-outline/10 py-16 px-6 md:px-10">
+        <div class="max-w-[1280px] mx-auto flex flex-col md:flex-row justify-between items-start gap-12">
+            <!-- Brand -->
+            <div class="max-w-xs space-y-4">
+                <img src="images/logo.png" alt="Logo RBQ Mergawati" class="h-20 w-auto object-contain mb-2" />
+                <p class="text-on-surface-variant text-sm leading-relaxed">
+                    Prasekolah Islam dengan metode Ummi, Abacaga, dan program parenting terpadu.
+                    Mendampingi tumbuh kembang anak secara holistik.
+                </p>
+                <p class="text-on-surface-variant text-xs">© 2024 Prasekolah RBQ Mercawati. All rights reserved.</p>
+            </div>
+
+            <!-- Links -->
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-10">
+                <div class="space-y-4">
+                    <h4 class="font-bold text-xs uppercase tracking-widest text-primary">Navigasi</h4>
+                    <ul class="space-y-3">
+                        <li><a class="text-sm text-on-surface-variant hover:text-secondary transition-colors"
+                                href="#program">Program</a></li>
+                        <li><a class="text-sm text-on-surface-variant hover:text-secondary transition-colors"
+                                href="#tentang-kami">Tentang Kami</a></li>
+                        <li><a class="text-sm text-on-surface-variant hover:text-secondary transition-colors"
+                                href="#galeri">Galeri</a></li>
+                    </ul>
+                </div>
+                <div class="space-y-4">
+                    <h4 class="font-bold text-xs uppercase tracking-widest text-primary">Info</h4>
+                    <ul class="space-y-3">
+                        <li><a class="text-sm text-on-surface-variant hover:text-secondary transition-colors"
+                                href="#tentang-kami">PPDB</a></li>
+                        <li><a class="text-sm text-on-surface-variant hover:text-secondary transition-colors"
+                                href="#">FAQ</a></li>
+                        <li><a class="text-sm text-on-surface-variant hover:text-secondary transition-colors"
+                                href="https://maps.app.goo.gl/z1ogq5t2Ep4G4Ztm7" target="_blank" rel="noopener">Lokasi</a></li>
+                    </ul>
+                </div>
+                <!-- Hubungi Kami -->
+                <div class="space-y-4 col-span-2 md:col-span-1">
+                    <h4 class="font-bold text-xs uppercase tracking-widest text-primary">Hubungi Kami</h4>
+                    <ul class="space-y-4">
+                        <li>
+                            <a href="https://wa.me/6281517802558?text=Assalamualaikum%20ust,%20boleh%20jelasin%20lebih%20detail%20lagi%20ga%20tentang%20RBQ%20ini" target="_blank" rel="noopener"
+                                class="flex items-center gap-3 group">
+                                <div
+                                    class="w-9 h-9 rounded-full bg-primary/10 flex items-center justify-center shrink-0 group-hover:bg-primary/20 transition-colors">
+                                    <!-- WA icon SVG -->
+                                    <svg class="w-5 h-5" fill="#4A635D" viewBox="0 0 24 24">
+                                        <path
+                                            d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.025 3.107l-.694 2.54 2.595-.68c.805.455 1.767.854 2.842.854 3.181 0 5.767-2.586 5.768-5.766 0-3.18-2.587-5.767-5.768-5.767zm3.391 8.221c-.142.405-.815.739-1.121.78-.29.039-.667.072-1.075-.059-.244-.079-.553-.187-.942-.356-1.657-.723-2.73-2.406-2.812-2.516-.082-.109-.669-.889-.669-1.697 0-.808.411-1.206.558-1.356.147-.15.319-.188.426-.188.106 0 .213.001.304.006.095.004.223-.036.35.267.132.317.452 1.102.492 1.184.04.081.066.177.013.284-.053.106-.08.177-.16.271-.079.094-.167.21-.238.283-.082.083-.167.173-.072.337.094.164.419.691.898 1.117.617.55 1.138.72 1.302.802.164.082.261.068.358-.044.097-.112.413-.481.524-.645.111-.164.223-.138.376-.081.154.057.973.459 1.141.543.167.085.279.127.319.197.04.07.04 1.406-.101 1.811z" />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <p class="text-xs text-on-surface-variant">WhatsApp</p>
+                                    <p
+                                        class="text-sm font-bold text-primary group-hover:text-secondary transition-colors">
+                                        0815 1780 2558</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <div class="flex items-center gap-3">
+                                <div
+                                    class="w-9 h-9 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
+                                    <span class="material-symbols-outlined !text-primary text-lg">person</span>
+                                </div>
+                                <div>
+                                    <p class="text-xs text-on-surface-variant">PIC Pendaftaran</p>
+                                    <p class="text-sm font-bold text-primary">Ust. Sofy</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="https://maps.app.goo.gl/z1ogq5t2Ep4G4Ztm7" target="_blank" rel="noopener"
+                                class="flex items-start gap-3 group">
+                                <div
+                                    class="w-9 h-9 rounded-full bg-primary/10 flex items-center justify-center shrink-0 group-hover:bg-primary/20 transition-colors">
+                                    <span class="material-symbols-outlined !text-primary text-lg">location_on</span>
+                                </div>
+                                <div>
+                                    <p class="text-xs text-on-surface-variant">Lokasi Kami</p>
+                                    <p class="text-sm font-bold text-primary group-hover:text-secondary transition-colors line-clamp-2">
+                                        Lihat di Google Maps
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="fixed bottom-8 right-8 z-[100] group">
+        <div
+            class="absolute -top-1 -right-1 w-4 h-4 bg-secondary rounded-full border-2 border-white z-10 shadow-sm animate-bounce">
+        </div>
+        <a class="w-16 h-16 sage-gradient rounded-full premium-shadow flex items-center justify-center text-white hover:scale-110 transition-transform active:scale-95"
+            href="https://wa.me/6281517802558?text=Assalamualaikum%20ust,%20boleh%20jelasin%20lebih%20detail%20lagi%20ga%20tentang%20RBQ%20ini" target="_blank" rel="noopener">
+            <svg class="w-8 h-8 fill-current" viewBox="0 0 24 24">
+                <path
+                    d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.025 3.107l-.694 2.54 2.595-.68c.805.455 1.767.854 2.842.854 3.181 0 5.767-2.586 5.768-5.766 0-3.18-2.587-5.767-5.768-5.767zm3.391 8.221c-.142.405-.815.739-1.121.78-.29.039-.667.072-1.075-.059-.244-.079-.553-.187-.942-.356-1.657-.723-2.73-2.406-2.812-2.516-.082-.109-.669-.889-.669-1.697 0-.808.411-1.206.558-1.356.147-.15.319-.188.426-.188.106 0 .213.001.304.006.095.004.223-.036.35.267.132.317.452 1.102.492 1.184.04.081.066.177.013.284-.053.106-.08.177-.16.271-.079.094-.167.21-.238.283-.082.083-.167.173-.072.337.094.164.419.691.898 1.117.617.55 1.138.72 1.302.802.164.082.261.068.358-.044.097-.112.413-.481.524-.645.111-.164.223-.138.376-.081.154.057.973.459 1.141.543.167.085.279.127.319.197.04.07.04 1.406-.101 1.811z" />
+            </svg>
+        </a>
+        <div
+            class="absolute bottom-full right-0 mb-4 px-4 py-2 bg-white rounded-xl shadow-xl border border-outline/10 text-xs font-bold text-primary opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap pointer-events-none">
+            Hubungi Ust. Sofy untuk Info PPDB
+        </div>
+    </div>
+
+
+    <div id="imageModal" class="fixed inset-0 z-[200] hidden items-center justify-center bg-black/90 p-4 transition-opacity backdrop-blur-sm">
+        <button onclick="closeModal()" class="absolute top-6 right-6 text-white hover:text-secondary transition-colors z-[210]">
+            <span class="material-symbols-outlined text-4xl">close</span>
+        </button>
+        <img id="modalImage" src="" alt="Fullscreen Gallery" class="max-w-full max-h-[90vh] object-contain rounded-xl shadow-2xl" />
+    </div>
+
+    <!-- External Script -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
